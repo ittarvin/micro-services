@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>cn.zjcw</groupId>
+    <artifactId>zjcw</artifactId>
+    <version>1.0-SNAPSHOT</version>
+
+
+    <modules>
+        <module>zjcw-plugin</module>
+        <module>zjcw-gateway</module>
+        <module>zjcw-oauth</module>
+        <module>zjcw-statistics</module>
+        <module>zjcw-notification</module>
+        <module>zjcw-utils</module>
+        <module>zjcw-oil-micro-services</module>
+        <module>zjcw-good-micro-services</module>
+        <module>zjcw-account-micro-services</module>
+    </modules>
+
+
+    <packaging>pom</packaging>
+
+
+    <properties>
+
+        <maven.compiler.source>1.8</maven.compiler.source>
+        <maven.compiler.target>1.8</maven.compiler.target>
+
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
+
+
+        <spring.cloud-version>Hoxton.SR12</spring.cloud-version>
+        <spring-boot.version>2.3.12.Release</spring-boot.version>
+
+
+        <org.projectlombok>1.16.16</org.projectlombok>
+        <zjcw.plugin.structlog4j>1.0-SNAPSHOT</zjcw.plugin.structlog4j>
+
+        <junit.version>4.13.2</junit.version>
+
+        <apollo-client.version>1.9.0</apollo-client.version>
+
+        <com.alibaba.fastjson>1.2.78</com.alibaba.fastjson>
+
+        <org.glassfish.version>1.1</org.glassfish.version>
+
+        <net.logstash.logback.version>6.1</net.logstash.logback.version>
+
+        <zjcw-plugin.version>1.0-SNAPSHOT</zjcw-plugin.version>
+        <zjcw-plugin-structlog4j-api.version>1.0-SNAPSHOT</zjcw-plugin-structlog4j-api.version>
+        <zjcw-plugin-structlog4j-json.version>1.0-SNAPSHOT</zjcw-plugin-structlog4j-json.version>
+        <zjcw-zipkin-kafka-starter.version>1.0-SNAPSHOT</zjcw-zipkin-kafka-starter.version>
+        <zjcw-zipkin-kafka-starter-gateway.version>1.0-SNAPSHOT</zjcw-zipkin-kafka-starter-gateway.version>
+        <zjcw-zipkin-kafka-core.version>1.0-SNAPSHOT</zjcw-zipkin-kafka-core.version>
+        <zjcw-zipkin-file-start.version>1.0-SNAPSHOT</zjcw-zipkin-file-start.version>
+    </properties>
+
+
+    <dependencyManagement>
+        <dependencies>
+
+            <dependency>
+                <groupId>org.springframework.cloud</groupId>
+                <artifactId>spring-cloud-dependencies</artifactId>
+                <version>${spring.cloud-version}</version>
+                <type>pom</type>
+                <scope>import</scope>
+            </dependency>
+
+            <dependency>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-dependencies</artifactId>
+                <version>${spring-boot.version}</version>
+                <type>pom</type>
+                <scope>import</scope>
+            </dependency>
+
+            <dependency>
+                <groupId>org.projectlombok</groupId>
+                <artifactId>lombok</artifactId>
+                <version>${org.projectlombok}</version>
+                <scope>provided</scope>
+            </dependency>
+
+            <dependency>
+                <groupId>junit</groupId>
+                <artifactId>junit</artifactId>
+                <version>${junit.version}</version>
+                <scope>compile</scope>
+            </dependency>
+
+            <dependency>
+                <groupId>com.ctrip.framework.apollo</groupId>
+                <artifactId>apollo-client</artifactId>
+                <version>${apollo-client.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>com.alibaba</groupId>
+                <artifactId>fastjson</artifactId>
+                <version>${com.alibaba.fastjson}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>org.glassfish</groupId>
+                <artifactId>javax.json</artifactId>
+                <version>${org.glassfish.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>net.logstash.logback</groupId>
+                <artifactId>logstash-logback-encoder</artifactId>
+                <version>${net.logstash.logback.version}</version>
+            </dependency>
+
+
+            <dependency>
+                <groupId>cn.zjcw</groupId>
+                <artifactId>zjcw-structlog4j-api</artifactId>
+                <version>${zjcw-plugin-structlog4j-api.version}</version>
+                <scope>compile</scope>
+            </dependency>
+
+            <dependency>
+                <groupId>cn.zjcw</groupId>
+                <artifactId>zjcw-structlog4j-json</artifactId>
+                <scope>compile</scope>
+                <version>${zjcw-plugin-structlog4j-json.version}</version>
+            </dependency>
+
+
+            <dependency>
+                <groupId>cn.zjcw</groupId>
+                <artifactId>zjcw-zipkin-kafka-starter</artifactId>
+                <scope>compile</scope>
+                <version>${zjcw-zipkin-kafka-starter.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>cn.zjcw</groupId>
+                <artifactId>zjcw-zipkin-kafka-starter-gateway</artifactId>
+                <scope>compile</scope>
+                <version>${zjcw-zipkin-kafka-starter-gateway.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>cn.zjcw</groupId>
+                <artifactId>zjcw-zipkin-kafka-core</artifactId>
+                <scope>compile</scope>
+                <version>${zjcw-zipkin-kafka-core.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>cn.zjcw</groupId>
+                <artifactId>zjcw-zipkin-file-starter</artifactId>
+                <scope>compile</scope>
+                <version>${zjcw-zipkin-file-start.version}</version>
+            </dependency>
+
+        </dependencies>
+
+    </dependencyManagement>
+
+
+
+</project>

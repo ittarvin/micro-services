@@ -1,0 +1,5 @@
+org.springframework.boot.autoconfigure.EnableAutoConfiguration=\
+cn.zjcw.zipkin.kafka.gateway.boot.ZipKinKafkaAutoConfiguration,\
+cn.zjcw.zipkin.kafka.gateway.boot.DynamicLoggerConfiguration
+org.springframework.context.ApplicationContextInitializer=\
+cn.zjcw.zipkin.kafka.gateway.boot.ZipKinKafkaGatewayApplicationContextInitializer

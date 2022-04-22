@@ -1,0 +1,3 @@
+cn\zjcw\zipkin\kafka\gateway\boot\DynamicLoggerConfiguration.class
+cn\zjcw\zipkin\kafka\gateway\boot\ZipKinKafkaAutoConfiguration.class
+cn\zjcw\zipkin\kafka\gateway\boot\ZipKinKafkaGatewayApplicationContextInitializer.class

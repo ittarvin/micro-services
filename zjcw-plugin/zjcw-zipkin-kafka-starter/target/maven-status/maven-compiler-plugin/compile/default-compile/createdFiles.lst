@@ -1,0 +1,4 @@
+cn\zjcw\zipkin\kafka\spring\boot\DynamicLoggerConfiguration.class
+cn\zjcw\zipkin\kafka\spring\boot\ZipKinKafkaAutoConfiguration.class
+cn\zjcw\zipkin\kafka\spring\filter\ZipkinKafkaFilter.class
+cn\zjcw\zipkin\kafka\spring\boot\ZipKinKafkaApplicationContextInitializer.class
