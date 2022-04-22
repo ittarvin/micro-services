@@ -1,7 +1,7 @@
 
 # 微服务架构体系
 ## 1.架构图及技术栈
-![8cd8ee66713616bf7ca3c8c0c43f803c.png](en-resource://database/752:1)
+![8cd8ee66713616bf7ca3c8c0c43f803c.png](https://static001.geekbang.org/infoq/45/454c2af0a3fe2896cac9ed1e5422a19e.png)
 
 
 | 中间件 |
@@ -17,7 +17,7 @@
 
 ## 2.微服务介绍
 ### 2.1.项目代码管理目录结构
-![fdafa263b9a072c74b20af20a7bee4ca.png](en-resource://database/758:1)
+![fdafa263b9a072c74b20af20a7bee4ca.png](https://static001.geekbang.org/infoq/1e/1e88e7fae6f3acf9cc7795e018a355ab.png)
 
 > 项目采用Maven进行项目代码管理。
 
@@ -25,7 +25,7 @@
 
 - zjcw-gateway
 >服务网关服务
-- zjcw-${}-micro-services
+- zjcw-${占位符}-micro-services
 > 按模块划分的微服务
 - zjcw-notifcation
 >通知服务（短信，钉钉，推送等）
@@ -52,7 +52,7 @@
 
 ### 4.业务微服务（zjcw-${}-micro-services）
 #### 4.1.微服务应用分层
-![fcd596f82ed10b10823bc81e7efaa678.png](en-resource://database/762:1)
+![fcd596f82ed10b10823bc81e7efaa678.png](https://static001.geekbang.org/infoq/fd/fd83030e5ca3e06fd24107ca677f1bcd.png)
 > **Controler** 业务请求控制层【不包括业务逻辑】
 > **Service**  服务层【与 domain 共同实现业务逻辑，主要担任 domain 层的业务协调工作】
 > **Domain** 层负责关键业务计算
@@ -63,16 +63,16 @@
 
 ##### 4.2.1.测试覆盖原则
 
-![33fb41908be4f64fce403143b763cf87.png](en-resource://database/764:1)
+![33fb41908be4f64fce403143b763cf87.png](https://static001.geekbang.org/infoq/59/5951849cfbf0c9bb5b7eee3cb2445250.png)
 
 - 单元测试（UT）
-  ![c96b75dcd91d1b93c9ef52b51777a47f.png](en-resource://database/770:1)
+  ![c96b75dcd91d1b93c9ef52b51777a47f.png](https://static001.geekbang.org/infoq/54/54aef54d1df997fe4e836e6cb3c662e4.png)
 > 使用技术：Junit，Spring Mock MVC，[Mpckito](https://site.mockito.org)
 - 集成测试（IT）
-  ![e53fe14281d99b804d995ca942696c27.png](en-resource://database/768:1)
+  ![e53fe14281d99b804d995ca942696c27.png](https://static001.geekbang.org/infoq/38/382a814c429e5da5e6556b3b117e72af.png)
 > 主要针对外部依赖进行测试。
 - 组件测试（CT）
-  ![96948323edc2d01eca16c4341e321cfc.png](en-resource://database/766:1)
+  ![96948323edc2d01eca16c4341e321cfc.png](https://static001.geekbang.org/infoq/a3/a37c49146d90aa2fc0b807b1c0c28011.png)
 >  内部 Mock **AND** 外部 Mock
 >  内部：Spring MockBean，外部工具 [WireMock](http://wiremock.org)
 >  外部： [hoverfly](https://hoverfly.io)
