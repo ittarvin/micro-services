@@ -3,7 +3,7 @@ This is a proof-of-concept application which demonstrates Microservices Architec
 
 # 微服务架构体系
 ## 1.架构图及技术栈
-![8cd8ee66713616bf7ca3c8c0c43f803c.png](https://static001.geekbang.org/infoq/b7/b7fddf0d480590be9b5555517cc5815f.png)
+![8cd8ee66713616bf7ca3c8c0c43f803c.png]()
 
 
 | 中间件 |
@@ -19,7 +19,7 @@ This is a proof-of-concept application which demonstrates Microservices Architec
 
 ## 2.微服务介绍
 ### 2.1.项目代码管理目录结构
-![fdafa263b9a072c74b20af20a7bee4ca.png](https://static001.geekbang.org/infoq/1e/1e88e7fae6f3acf9cc7795e018a355ab.png)
+![fdafa263b9a072c74b20af20a7bee4ca.png]()
 
 > 项目采用Maven进行项目代码管理。
 
@@ -54,7 +54,7 @@ This is a proof-of-concept application which demonstrates Microservices Architec
 
 ### 4.业务微服务（zjcw-${}-micro-services）
 #### 4.1.微服务应用分层
-![fcd596f82ed10b10823bc81e7efaa678.png](https://static001.geekbang.org/infoq/7e/7eb0f290dfd6f84ef58fa32b52ceebe3.png)
+![fcd596f82ed10b10823bc81e7efaa678.png]()
 > **Controler** 业务请求控制层【不包括业务逻辑】
 > **Service**  服务层【与 domain 共同实现业务逻辑，主要担任 domain 层的业务协调工作】
 > **Domain** 层负责关键业务计算
@@ -65,16 +65,16 @@ This is a proof-of-concept application which demonstrates Microservices Architec
 
 ##### 4.2.1.测试覆盖原则
 
-![33fb41908be4f64fce403143b763cf87.png](https://static001.geekbang.org/infoq/59/5951849cfbf0c9bb5b7eee3cb2445250.png)
+![33fb41908be4f64fce403143b763cf87.png]()
 
 - 单元测试（UT）
-  ![c96b75dcd91d1b93c9ef52b51777a47f.png](https://static001.geekbang.org/infoq/a9/a959d8438f6f527caf61981bbc50e46b.png)
+  ![c96b75dcd91d1b93c9ef52b51777a47f.png]()
 > 使用技术：Junit，Spring Mock MVC，[Mpckito](https://site.mockito.org)
 - 集成测试（IT）
-  ![e53fe14281d99b804d995ca942696c27.png](https://static001.geekbang.org/infoq/9c/9c2d96fdca137f9b844e8ceec1755644.png)
+  ![e53fe14281d99b804d995ca942696c27.png]()
 > 主要针对外部依赖进行测试。
 - 组件测试（CT）
-  ![96948323edc2d01eca16c4341e321cfc.png](https://static001.geekbang.org/infoq/66/668456c72c57284a5b8467eee1c7864b.png)
+  ![96948323edc2d01eca16c4341e321cfc.png]()
 >  内部 Mock **AND** 外部 Mock
 >  内部：Spring MockBean，外部工具 [WireMock](http://wiremock.org)
 >  外部： [hoverfly](https://hoverfly.io)
