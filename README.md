@@ -3,7 +3,7 @@ This is a proof-of-concept application which demonstrates Microservices Architec
 
 # 微服务架构体系
 ## 1.架构图及技术栈
-![]()
+![](https://github.com/ittarvin/ittarvin.github.io/blob/main/assets/img/59145CF4-D2FF-49ff-84F2-3AC4C76695E3.png)
 
 
 | 中间件 |
