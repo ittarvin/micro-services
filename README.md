@@ -3,7 +3,7 @@ This is a proof-of-concept application which demonstrates Microservices Architec
 
 # 微服务架构体系
 ## 1.架构图及技术栈
-![](https://github.com/ittarvin/ittarvin.github.io/blob/main/assets/img/59145CF4-D2FF-49ff-84F2-3AC4C76695E3.png)
+![](https://github.com/ittarvin/ittarvin.github.io/blob/main/assets/img/%E5%BE%AE%E6%9C%8D%E5%8A%A1%E6%9E%B6%E6%9E%84%E5%9B%BE.png)
 
 
 | 中间件 |
@@ -19,7 +19,7 @@ This is a proof-of-concept application which demonstrates Microservices Architec
 
 ## 2.微服务介绍
 ### 2.1.项目代码管理目录结构
-![]()
+![](https://github.com/ittarvin/ittarvin.github.io/blob/main/assets/img/59145CF4-D2FF-49ff-84F2-3AC4C76695E3.png)
 
 > 项目采用Maven进行项目代码管理。
 
@@ -54,7 +54,7 @@ This is a proof-of-concept application which demonstrates Microservices Architec
 
 ### 4.业务微服务（zjcw-${}-micro-services）
 #### 4.1.微服务应用分层
-![fcd596f82ed10b10823bc81e7efaa678.png]()
+![](https://github.com/ittarvin/ittarvin.github.io/blob/main/assets/img/Spring%E5%BA%94%E7%94%A8%E5%88%86%E5%B1%82.png)
 > **Controler** 业务请求控制层【不包括业务逻辑】
 > **Service**  服务层【与 domain 共同实现业务逻辑，主要担任 domain 层的业务协调工作】
 > **Domain** 层负责关键业务计算
@@ -64,17 +64,15 @@ This is a proof-of-concept application which demonstrates Microservices Architec
 #### 4.2.微服务应用测试
 
 ##### 4.2.1.测试覆盖原则
-
-![]()
-
+![](https://github.com/ittarvin/ittarvin.github.io/blob/main/assets/img/%E6%B5%8B%E8%AF%95%E9%87%91%E5%AD%97%E5%A1%94.png)
 - 单元测试（UT）
-  ![]()
+  ![](https://github.com/ittarvin/ittarvin.github.io/blob/main/assets/img/%E5%8D%95%E5%85%83%E6%B5%8B%E8%AF%95.png)
 > 使用技术：Junit，Spring Mock MVC，[Mpckito](https://site.mockito.org)
 - 集成测试（IT）
-  ![]()
+  ![](https://github.com/ittarvin/ittarvin.github.io/blob/main/assets/img/%E9%9B%86%E6%88%90%E6%B5%8B%E8%AF%95.png)
 > 主要针对外部依赖进行测试。
 - 组件测试（CT）
-  ![]()
+  ![](https://github.com/ittarvin/ittarvin.github.io/blob/main/assets/img/%E7%BB%84%E4%BB%B6%E6%B5%8B%E8%AF%95.png)
 >  内部 Mock **AND** 外部 Mock
 >  内部：Spring MockBean，外部工具 [WireMock](http://wiremock.org)
 >  外部： [hoverfly](https://hoverfly.io)
