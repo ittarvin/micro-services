@@ -3,7 +3,7 @@ This is a proof-of-concept application which demonstrates Microservices Architec
 
 # 微服务架构体系
 ## 1.架构图及技术栈
-![8cd8ee66713616bf7ca3c8c0c43f803c.png]()
+![]()
 
 
 | 中间件 |
@@ -19,7 +19,7 @@ This is a proof-of-concept application which demonstrates Microservices Architec
 
 ## 2.微服务介绍
 ### 2.1.项目代码管理目录结构
-![fdafa263b9a072c74b20af20a7bee4ca.png]()
+![]()
 
 > 项目采用Maven进行项目代码管理。
 
@@ -65,16 +65,16 @@ This is a proof-of-concept application which demonstrates Microservices Architec
 
 ##### 4.2.1.测试覆盖原则
 
-![33fb41908be4f64fce403143b763cf87.png]()
+![]()
 
 - 单元测试（UT）
-  ![c96b75dcd91d1b93c9ef52b51777a47f.png]()
+  ![]()
 > 使用技术：Junit，Spring Mock MVC，[Mpckito](https://site.mockito.org)
 - 集成测试（IT）
-  ![e53fe14281d99b804d995ca942696c27.png]()
+  ![]()
 > 主要针对外部依赖进行测试。
 - 组件测试（CT）
-  ![96948323edc2d01eca16c4341e321cfc.png]()
+  ![]()
 >  内部 Mock **AND** 外部 Mock
 >  内部：Spring MockBean，外部工具 [WireMock](http://wiremock.org)
 >  外部： [hoverfly](https://hoverfly.io)
